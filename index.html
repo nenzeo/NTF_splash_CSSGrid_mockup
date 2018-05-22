@@ -2,67 +2,28 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous"> 
     <link href="css/main.css" rel="stylesheet">
-    <script src="js/main.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
 
         <div class="slideRight grow">
-            <div class="image stretchLeft">
-                <img src="img/JointOps.jpg" class="image object-fit_cover">
-                <h1>Joint Ops</h1>
-            </div>
-            <div id="jointops" class="stretchLeft pullRight well hidden-jointops">
-                <h2>
-                        Want to play with us?
-                </h2>
-                <br>
-                <h3>
-                        Technicalitys
-                </h3>
-                <ul class="list-group">
-                        <li><p>We use TeamSpeak with ACRE</p></li>
-                        <li><p>Our server is a dedicated datacenter server in germany,<br> capable of hosting 100 players</p></li>
-                        <li><p>Our modpack is about 40GB</p></li>
-                </ul>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <form class="form-horizontal">
-                                <div class="form-group">
-                                    <label for="exampleInputName2">Contact Name</label>
-                                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Harry Hardrock">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputName2">Org Name</label>
-                                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Harry and the Hardrokks">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail2">E-Mail</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="harry@hardrock.no">
-                                </div>
-                                <div class="form-group ">
-                                    <label for="exampleInputText">Your message</label>
-                                    <textarea  class="form-control" placeholder="What do you suggest?"></textarea> 
-                                </div>
-                                <button type="submit" class="btn btn-default">Send Søknad</button>
-                        </form>
-                    </div>
+            <a href="http://ntfmilsim.no/main/">
+                <div class="panel">
+                    <img src="img/members.jpg" class="image object-fit_cover">        
+                    <h1>Hovedside</h1>
                 </div>
-            </div>  
+            </a>
         </div>
 
         <div class="slideDown grow">
-            <div class="image">
-                <img src="img/recruit.jpg" class="image object-fit_cover">
-                <h1>Rekruttering</h1>
-            </div>
-            <div id="recruit" class="pullDown well hidden-recruit">
+            <div id="recruit" class="pullDown well collapse">
                 <h2>
                         Join oss og bli med!
                 </h2>
@@ -82,40 +43,45 @@
                         <li><p>Vi kontakter deg med mulige intervju tider</p></li>
                         <li><p>Du melder deg på en av rekrutt eventene, bootcamp e.l.</p></li>
                 </ul>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <form class="form-horizontal">
-                                <div class="form-group">
-                                    <label for="exampleInputName2">Navn</label>
-                                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Harry Hardrokk">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail2">E-Post</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="harry@hardrokk.no">
-                                </div>
-                                <div class="form-group ">
-                                    <label for="exampleInputText">Din søknad</label>
-                                    <textarea  class="form-control" placeholder="Hvorfor du ønsker å bli medlem?"></textarea> 
-                                </div>
-                                <button type="submit" class="btn btn-default">Send Søknad</button>
-                        </form>
-                    </div>
-                </div>
+                <div class="button">Innmelding</div>
+            </div>
+            <div class="panel" data-toggle="collapse" data-target="#recruit">
+                <img src="img/recruit.jpg" class="image object-fit_cover">
+                <h1>Rekruttering</h1>
             </div>
         </div>
+
 
         <div class="slideUp grow">
-            <div class="image">
-                <img src="img/members.jpg" class="image object-fit_cover">        
-                <h1>Hovedside</h1>
+            <div id="jointops" class="pullDown well collapse">
+                <h2>
+                        Want to play with us?
+                </h2>
+                <br>
+                <h3>
+                        Technicalitys
+                </h3>
+                <ul class="list-group">
+                        <li><p>We use TeamSpeak with ACRE</p></li>
+                        <li><p>Our server is a dedicated datacenter server in germany,<br> capable of hosting 100 players</p></li>
+                        <li><p>Our modpack is about 40GB</p></li>
+                </ul>
+                <div class="button">Joint Ops form</div>
             </div>
+            <div class="panel" data-toggle="collapse" data-target="#jointops">
+                <img src="img/JointOps.jpg" class="image object-fit_cover">
+                <h1>Joint Ops</h1>
+            </div>   
         </div>
 
+
         <div class="slideLeft grow">
-            <div class="image">
-                <img src="img/Media.jpg" class="image object-fit_cover">
-                <h1>Media</h1>
-            </div>  
+            <a href="http://ntfmilsim.no/main/media/">
+                <div class="panel" data-toggle="collapse" data-target="#media">
+                    <img src="img/Media.jpg" class="image object-fit_cover">
+                    <h1>Media</h1>
+                </div>
+            </a>
         </div>
     </div>
 </body>
